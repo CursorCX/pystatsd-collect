@@ -1,2 +1,2 @@
-pytstatsd
+pytstatsd-collect
 =========
