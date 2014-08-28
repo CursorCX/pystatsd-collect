@@ -11,6 +11,8 @@ Pystatsd-collect
 
 配置
 ====
+    将 pystastd.conf 放在 /etc/pystastd/pystatsd.conf
+    pystatsd.conf 配置如下:
 
     [common]
     server=10.0.20.5                # pystatsd-server 所在ip
