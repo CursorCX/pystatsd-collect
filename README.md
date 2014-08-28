@@ -37,6 +37,7 @@ pytstatsd-server
 
     pystatsd-server 帮助说明:
 
+```bash
     usage: pystatsd-server [-h] [-d] [-n NAME] [-p PORT] [-r TRANSPORT]
                         [--graphite-port GRAPHITE_PORT]
                         [--graphite-host GRAPHITE_HOST]
@@ -99,3 +100,4 @@ pytstatsd-server
     --graphite-host     为graphite的地址
     --COUNTERS_PREFIX   作为发送到graphite的指定目录, 例如该案列指定到system目录, 不指定默认是statsd目录
     --FLUSH_INTERVAL    指定发送数据到graphite的间隔, 毫秒为单位
+```
