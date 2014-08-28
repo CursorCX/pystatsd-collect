@@ -4,11 +4,11 @@
 import sys,os
 from statsd import StatsClient
 import re
-    
+
 '''
     version 1.0
     author Curosr
-    采用多进程,Daemon方式采集nginx_access日志和fpm的slow,error日志
+    Daemon方式采集nginx_access日志和fpm的slow,error日志
 '''
 
 BASEDIR = os.path.abspath(os.curdir)
@@ -98,7 +98,7 @@ def check_fpm_error(coll_type, file, server, port, local):
         logfile.close()
     except IOError as ioerr:
         print ioerr
-        
+
     fpm_error_status={'error_num' : 0}
     if seeklines == "":
         fpm_error_status['error_num'] = 0
@@ -135,9 +135,9 @@ def check_fpm_slow(coll_type, file, server, port, local):
         logfile.close()
     except IOError as ioerr:
         print ioerr
-    
+
     fpm_slow_status = {'slow_num' : 0}
-    
+
     if seeklines == "":
         fpm_slow_status['slow_num'] = 0
     else:
