@@ -2,11 +2,12 @@ pytstatsd-collect
 =================
 简介
 ====
-collect_pystatsd.py 利用 Statsd 将采集的数据发送给 pystatsd-server, 再由server转发给graphite,
-采集的数据目前支持
-nginx 的访问状态,包括: 5XX, 4XX, 3XX, 2XX, 采集状态根据nginx的日志格式来区分
-fpm 的慢日志, 根据时间戳来计数
-fpm 的错误日志, 根据时间戳来计数
+
+    collect_pystatsd.py 利用 Statsd 将采集的数据发送给 pystatsd-server, 再由server转发给graphite,
+    采集的数据目前支持
+    nginx 的访问状态,包括: 5XX, 4XX, 3XX, 2XX, 采集状态根据nginx的日志格式来区分
+    fpm 的慢日志, 根据时间戳来计数
+    fpm 的错误日志, 根据时间戳来计数
 
 配置
 ====
@@ -36,8 +37,6 @@ pytstatsd-server
 ================
 
     pystatsd-server 帮助说明:
-
-```bash
     usage: pystatsd-server [-h] [-d] [-n NAME] [-p PORT] [-r TRANSPORT]
                         [--graphite-port GRAPHITE_PORT]
                         [--graphite-host GRAPHITE_HOST]
@@ -100,4 +99,3 @@ pytstatsd-server
     --graphite-host     为graphite的地址
     --COUNTERS_PREFIX   作为发送到graphite的指定目录, 例如该案列指定到system目录, 不指定默认是statsd目录
     --FLUSH_INTERVAL    指定发送数据到graphite的间隔, 毫秒为单位
-```
