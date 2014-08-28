@@ -1,4 +1,4 @@
-pytstatsd-collect
+Pystatsd-collect
 =================
 简介
 ====
